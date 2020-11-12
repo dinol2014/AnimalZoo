@@ -13,15 +13,17 @@ namespace AnimalZoo
             Animal[] allAnimals;
             allAnimals = new Animal[4];
 
+            #region konstruktorn gör en ny instans av obejektet
             allAnimals[0] = new Cat("Kurre");
             allAnimals[1] = new Dog("Vilma");
             allAnimals[2] = new Cat("Bamse");
             allAnimals[3] = new Bird("Birb");
+            #endregion
 
-            foreach (Animal a in allAnimals)
+            foreach (Animal a in allAnimals) // för varje Animal i allAnimals så loopar den
             {
                 Console.WriteLine("Nu kommer " + a.name);
-                a.IntroduceYourself();
+                a.IntroduceYourself(); // kallar på en function i ett obejekt
                 Console.WriteLine("");
             }
             Console.ReadKey();

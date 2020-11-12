@@ -8,7 +8,7 @@ namespace AnimalZoo
 {
     class Bird : Animal
     {
-        public Bird(string name)
+        public Bird(string name) // bygger ut konstruktor
         {
             /*inistiera attribut i obejektet*/
             species = SPECIES.BIRD; 
@@ -16,7 +16,7 @@ namespace AnimalZoo
             base.name = name;
         }
 
-        public override void IntroduceYourself()
+        public override void IntroduceYourself() // överskriver functionen från Animal
         {
             Console.WriteLine("Pip. Jag är en fågel som heter " + name);
             base.IntroduceYourself();

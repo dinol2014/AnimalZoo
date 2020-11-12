@@ -14,7 +14,7 @@ namespace AnimalZoo
         public SPECIES species;
         public bool canFly;
 
-        public virtual void IntroduceYourself()
+        public virtual void IntroduceYourself() //tillåter sigskälv att bli överskriven
         {
             if(canFly  == true)
             {
