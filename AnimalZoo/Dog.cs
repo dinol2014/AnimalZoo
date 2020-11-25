@@ -19,6 +19,7 @@ namespace AnimalZoo
         public override void IntroduceYourself() // överskriver functionen från Animal
         {
             Console.WriteLine("Voff. Jag är en hund som heter " + name);
+            Console.WriteLine("Jag är " + age + " år gammal.");
             base.IntroduceYourself();
         }
     }

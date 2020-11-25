@@ -20,7 +20,7 @@ namespace AnimalZoo
             allAnimals[3] = new Bird("Birb");
             #endregion
 
-            foreach (Animal a in allAnimals) // för varje Animal i allAnimals så loopar den
+            foreach (Animal a in allAnimals) // för varje instans a av klassen Animal så loopar den
             {
                 Console.WriteLine("Nu kommer " + a.name);
                 a.IntroduceYourself(); // kallar på en function i ett obejekt
