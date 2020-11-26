@@ -17,9 +17,30 @@ namespace AnimalZoo
         private static int currentYear = 2020;
         private int birthYear;
 
+        public void SetAge(int age)
+        {
+            birthYear = currentYear - age;
+        }
+
+        public int GetAge()
+        {
+            int age = currentYear - birthYear;
+            return age;
+        }
+
+        public static void SetYear(int year)
+        {
+            currentYear = year;
+        }
+
         public string GetName()
         {
             return name;
+        }
+
+        public void SetName(string name)
+        {
+            this.name = name;
         }
 
         public SPECIES GetSpecies()
@@ -27,15 +48,19 @@ namespace AnimalZoo
             return species;
         }
 
+        public void SetSpecies(SPECIES species)
+        {
+            this.species = species;
+        }
+
         public bool GetCanFly()
         {
             return canFly;
         }
 
-        public int GetAge(int birthYear)
+        public void SetCanFly(bool canFly)
         {
-            int age = currentYear - birthYear;
-            return age;
+            this.canFly = canFly;
         }
 
         public virtual void IntroduceYourself() // tillåter sigskälv att bli överskriven

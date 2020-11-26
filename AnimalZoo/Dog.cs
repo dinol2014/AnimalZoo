@@ -8,18 +8,19 @@ namespace AnimalZoo
 {
     class Dog : Animal
     {
-        public Dog(string name) // bygger ut konstruktor
+        public Dog(string name, int age) // bygger ut konstruktor
         {
             /*inistiera attribut i obejektet*/
-            species = SPECIES.DOG; 
-            canFly = false;
-            base.name = name;
+            SetSpecies(SPECIES.DOG); 
+            SetCanFly(false);
+            SetName(name);
+            SetAge(age);
         }
 
         public override void IntroduceYourself() // överskriver functionen från Animal
         {
-            Console.WriteLine("Voff. Jag är en hund som heter " + name);
-            Console.WriteLine("Jag är " + age + " år gammal.");
+            Console.WriteLine("Voff. Jag är en hund som heter " + GetName());
+            Console.WriteLine("Jag är " + GetAge() + " år gammal.");
             base.IntroduceYourself();
         }
     }

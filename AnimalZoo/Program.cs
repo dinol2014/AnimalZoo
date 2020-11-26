@@ -8,7 +8,7 @@ namespace AnimalZoo
 {
     class Program
     {
-        static void Main(string[] args)
+       /* static void Main(string[] args)
         {
             Animal[] allAnimals;
             allAnimals = new Animal[4];
@@ -27,6 +27,23 @@ namespace AnimalZoo
                 Console.WriteLine("");
             }
             Console.ReadKey();
+        }*/
+
+        public static void Main(string[] args)
+        {
+            Animal.SetYear(2019);
+
+            Animal kurre = new Cat("Kurre", 6);
+            Animal vilma = new Dog("Vilma", 3);
+
+            kurre.IntroduceYourself();
+            vilma.IntroduceYourself();
+
+            Animal.SetYear(2020);
+
+            kurre.IntroduceYourself();
+            vilma.IntroduceYourself();
+            Console.ReadLine();
         }
     }
 }
